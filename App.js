@@ -35,7 +35,7 @@ export default function App(){
 
   function handleDelete(item){
     let filtroItem = list.filter((tarefa) => {
-      return (tarefa.item !== item)
+      return (tarefa.item !== item) //retornar todas as tarefas menos a excluída
     })
 
     setList(filtroItem)
